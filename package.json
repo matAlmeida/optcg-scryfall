@@ -1,0 +1,16 @@
+{
+  "name": "optcg-scryfall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "download": "node ./src/scripts/download_collections.js",
+    "parse": "node ./src/scripts/parse_collections.js"
+  },
+  "keywords": [],
+  "author": "Matheus Almeida <mat.almeida@live.com>",
+  "license": "MIT"
+}
