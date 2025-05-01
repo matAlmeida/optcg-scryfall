@@ -8,6 +8,10 @@ module.exports = [
     "code": "eb01"
   },
   {
+    "series": "569202",
+    "code": "eb02"
+  },
+  {
     "series": "569110",
     "code": "op10"
   },
