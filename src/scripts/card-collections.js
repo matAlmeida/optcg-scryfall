@@ -12,6 +12,10 @@ module.exports = [
     "code": "eb02"
   },
   {
+    "series": "569111",
+    "code": "op11"
+  },
+  {
     "series": "569110",
     "code": "op10"
   },
@@ -50,6 +54,30 @@ module.exports = [
   {
     "series": "569101",
     "code": "op01"
+  },
+  {
+    "series": "569028",
+    "code": "st28"
+  },
+  {
+    "series": "569027",
+    "code": "st27"
+  },
+  {
+    "series": "569026",
+    "code": "st26"
+  },
+  {
+    "series": "569025",
+    "code": "st25"
+  },
+  {
+    "series": "569024",
+    "code": "st24"
+  },
+  {
+    "series": "569023",
+    "code": "st23"
   },
   {
     "series": "569021",
