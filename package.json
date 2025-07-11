@@ -8,7 +8,8 @@
   },
   "scripts": {
     "download": "node ./src/scripts/download_collections.js",
-    "parse": "node ./src/scripts/parse_collections.js"
+    "parse": "node ./src/scripts/parse_collections.js",
+    "merge": "node ./src/scripts/merge_cards.js"
   },
   "keywords": [],
   "author": "Matheus Almeida <mat.almeida@live.com>",
