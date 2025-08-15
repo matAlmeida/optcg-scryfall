@@ -17,6 +17,7 @@ for card in cards:
     (code, rarity, card_type) = [info.text for info in card.find('div', attrs={'class':'infoCol'}).find_all('span')]
     card_name = card.find('div', attrs={'class':'cardName'}).text
     card_image_link = card.find('div', attrs={'class':'frontCol'}).find('img').get_attribute_list('data-src')
+    card_image_link = [link.replace("../", "") for link in card_image_link]
 
     # Card Infos
     card_infos = card.find('div', attrs={'class':'backCol'})
