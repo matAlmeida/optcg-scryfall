@@ -27,6 +27,8 @@ for card in cards:
         life = card_infos.find('div', attrs={'class':'cost'}).text.replace("Life", "")
     else:
         cost = card_infos.find('div', attrs={'class':'cost'}).text.replace("Cost", "")
+        if cost == "-":
+            cost = "0"
     attribute = card_infos.find('div', attrs={'class':'attribute'}).find('i').text
     if not attribute:
         attribute = None
