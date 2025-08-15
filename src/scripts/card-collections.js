@@ -4,12 +4,12 @@ module.exports = [
     "code": "prb01"
   },
   {
-    "series": "569201",
-    "code": "eb01"
-  },
-  {
     "series": "569202",
     "code": "eb02"
+  },
+  {
+    "series": "569201",
+    "code": "eb01"
   },
   {
     "series": "569112",
