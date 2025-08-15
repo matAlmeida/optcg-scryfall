@@ -1,6 +1,6 @@
 ## [WIP] OPTCG-SCRYFALL
 
-### Requirements
+### Dependencies
 
 `Python3.x` or greater<br/>
 `Node20.x` or greater
@@ -92,3 +92,4 @@ After that the new collection will be available as a new file in `assets/parsed`
 ### TODO
 
 - [ ] Merge all cards with same `code` into a single object with `card_image_link` link containing all the images
+- [ ] Convert the `fetch_collection.py` to Node script to remove Python dependency
