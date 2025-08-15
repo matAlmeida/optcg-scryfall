@@ -20,7 +20,12 @@ for card in cards:
 
     # Card Infos
     card_infos = card.find('div', attrs={'class':'backCol'})
-    cost = card_infos.find('div', attrs={'class':'cost'}).text
+    life = None
+    cost = None
+    if card_type == "LEADER":
+        life = card_infos.find('div', attrs={'class':'cost'}).text.replace("Life", "")
+    else:
+        cost = card_infos.find('div', attrs={'class':'cost'}).text
     attribute = card_infos.find('div', attrs={'class':'attribute'}).find('i').text
     if not attribute:
         attribute = None
@@ -55,13 +60,14 @@ for card in cards:
         'rarity': rarity,
         'card_type': card_type,
         'card_name': card_name,
-        'card_image_link': card_image_link,
         'cost': cost,
-        'attribute': attribute,
+        'life': life,
         'power': power,
         'counter': counter,
         'color': color,
+        'attribute': attribute,
         'feature': feature,
+        'card_image_link': card_image_link,
         'text': text,
         'trigger': trigger,
         'card_sets': card_sets,
